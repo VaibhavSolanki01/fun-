@@ -1,4 +1,4 @@
-# Bus Driver
+# Driver
 
 A barbershop-styled radio player. Real playback runs through YouTube's
 **IFrame Player API** — the spinning disc shows the actual song's
