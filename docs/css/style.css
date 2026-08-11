@@ -468,8 +468,56 @@ img {
    Small screens
    ========================================================================== */
 
+@media (max-width: 620px) {
+  .page {
+    padding: 18px 16px 100px;
+  }
+
+  .top-row {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+
+  .platform-links {
+    grid-column: 1 / -1;
+    justify-self: stretch;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .pill {
+    padding: 10px 14px;
+    font-size: 0.92rem;
+    gap: 7px;
+  }
+
+  .pill__icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 @media (max-width: 380px) {
   .page {
-    padding: 18px 16px;
+    padding: 18px 12px;
+  }
+
+  .top-row {
+    gap: 8px;
+  }
+
+  .clock,
+  .listeners__count,
+  .listeners__label {
+    font-size: 0.9rem;
+  }
+
+  .platform-links {
+    justify-content: center;
+  }
+
+  .pill {
+    width: 100%;
+    justify-content: center;
   }
 }
